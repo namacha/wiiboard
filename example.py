@@ -11,9 +11,18 @@ board = wiiboard.Board()
 # |  DD       CC   |
 # |     Button     |
 # +----------------+
+
+
+# show weight of each corner
+print board.weights.topright
+print board.weights.topleft
+print board.weights.bottomright
+print board.weights.bottomleft
+
+# show total weight
 print board.weights.total
 
-# show button state(boolean)
+# show whether button pressed(boolean)
 print board.button
 
 # toggle led of front button
