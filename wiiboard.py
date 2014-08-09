@@ -241,12 +241,3 @@ class Board(object):
     def worker(self):
         while not self.f_disconnect:
             self.last_received = self.receive()
-
-if __name__ == "__main__":
-    import readline
-    import code
-    b = Board()
-    vars = globals().copy()
-    vars.update(locals())
-    shell = code.InteractiveConsole(vars)
-    shell.interact()
